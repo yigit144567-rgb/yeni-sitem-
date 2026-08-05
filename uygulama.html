@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgisayarımdaki İlk Uygulama</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .kart {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #sonuc {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #28a745;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kart">
+        <h1>Kodun Hazır! 🎉</h1>
+        <p>Aşağıdaki butona basarak yazdığın ilk JavaScript kodunu çalıştırabilirsin.</p>
+        
+        <button onclick="koduCalistir()">Tıkla ve Çalıştır</button>
+        
+        <div id="sonuc"></div>
+    </div>
+
+    <script>
+        function koduCalistir() {
+            const sonucAlani = document.getElementById("sonuc");
+            sonucAlani.innerHTML = "Tebrikler! Kodun bilgisayarında sorunsuz çalıştı.";
+        }
+    </script>
+
+</body>
+</html>
